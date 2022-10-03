@@ -1,0 +1,80 @@
+.grid {
+  column-gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 20px;
+  text-align: center;
+}
+
+.grid_portfolio {
+  position: relative;
+}
+
+.grid_portfolio_image {
+  border-radius: 10px;
+  box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.3);
+  height: 100%;
+  transition-duration: 400ms;
+  transition-timing-function: ease-in-out;
+  width: 100%;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0;
+  }
+}
+
+.grid_portfolio_background {
+  background: #5b738f;
+  border-radius: 10px;
+  opacity: 0;
+  transition-duration: 400ms;
+  transition-timing-function: ease-in-out;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  input {
+    border-radius: 8px;
+    font-size: 16px;
+    margin: 0;
+    padding: 10px 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  input:hover {
+    cursor: pointer;
+  }
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid__portfolio_background input {
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 320px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .grid__portfolio_background input {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,27 @@
+@import "./_testimonial";
+@import "./_portfolio-grid";
+@import "./_social-buttons";
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: #c3cfe2;
+  color: rgb(28, 28, 73);
+  font-family: "Open Sans";
+  padding: 20px;
+}
+
+ul {
+  padding: 20px;
+}
+
+li a {
+  color: rgb(28, 28, 73);
+}
+
+h1,
+h3 {
+  text-align: center;
+}

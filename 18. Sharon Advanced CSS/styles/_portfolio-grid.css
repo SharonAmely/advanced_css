@@ -1,0 +1,31 @@
+/* PORTFOLIO GRID */
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 20px;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  text-align: center;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.button {
+  color: white;
+  position: relative;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+  .grid-container {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 320px) {
+  .grid-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}

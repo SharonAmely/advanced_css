@@ -1,0 +1,128 @@
+.container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 12px;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.container_button {
+  width: 20px;
+  height: 20px;
+  padding: 20px;
+  transition: ease-out;
+  transition-duration: 300ms;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  img {
+    padding-right: 20px;
+  }
+  span {
+    text-decoration: underline;
+    position: absolute;
+  }
+
+  &:hover {
+    cursor: pointer;
+    position: absolute;
+    right: 0px;
+  }
+}
+
+.container_button_blog {
+  background: #e17b77;
+  position: absolute;
+  bottom: 240px;
+
+  &:hover {
+    width: 200px;
+    position: absolute;
+    right: 0px;
+    bottom: 240px;
+
+    span {
+      position: absolute;
+      right: 60px;
+    }
+  }
+}
+
+.container_button_twitter {
+  background: #00aced;
+  position: absolute;
+  bottom: 180px;
+
+  &:hover {
+    bottom: 180px;
+    position: absolute;
+    right: 0px;
+    width: 200px;
+
+    span {
+      position: absolute;
+      right: 50px;
+    }
+  }
+}
+
+.container_button_linkedin {
+  background: #007bb6;
+  position: absolute;
+  bottom: 120px;
+
+  &:hover {
+    bottom: 120px;
+    position: absolute;
+    right: 0px;
+    width: 200px;
+
+    span {
+      position: absolute;
+      right: 50px;
+    }
+  }
+}
+
+.container_button_facebook {
+  background: #3b5998;
+  position: absolute;
+  bottom: 60px;
+
+  &:hover {
+    bottom: 60px;
+    position: absolute;
+    right: 0px;
+    width: 200px;
+
+    span {
+      position: absolute;
+      right: 40px;
+    }
+  }
+}
+
+.container_button_github {
+  background: #333;
+  position: absolute;
+  bottom: 0;
+
+  &:hover {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+
+    span {
+      position: absolute;
+      right: 30px;
+    }
+  }
+}
